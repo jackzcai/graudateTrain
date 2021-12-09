@@ -24,26 +24,10 @@ public class Bit {
 
     public String turnBit(int turnNumber){
         String numberString = turnNumber + "";
+
         int length = numberString.length();
+
         return "";
     }
-    public String reverse() {
-        boolean hasSurrogates = false;
-        int n = count - 1;
-        for (int j = (n-1) >> 1; j >= 0; j--) {
-            int k = n - j;
-            char cj = value[j];
-            char ck = value[k];
-            value[j] = ck;
-            value[k] = cj;
-            if (Character.isSurrogate(cj) ||
-                    Character.isSurrogate(ck)) {
-                hasSurrogates = true;
-            }
-        }
-        if (hasSurrogates) {
-            reverseAllValidSurrogatePairs();
-        }
-        return this;
-    }
+
 }

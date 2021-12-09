@@ -1,3 +1,6 @@
+import test.Train;
+import test.Trainft;
+
 public class Main {
     public static void main(String[] args){
         int q3=-2;
@@ -11,7 +14,7 @@ public class Main {
         int q1=0;
         int q2=3;
         int jj=q1>q2?q1++:q2;
-        int i=Trainft.abs(-1);
+        int i= Trainft.abs(-1);
         System.out.println(i);
         Integer jb=1;
         boolean j2 = true;
@@ -43,9 +46,23 @@ int bb=c;
         int n3=9;
         int res= n1>n2? n1>n3?n1:n3 : n2>n3?n2:n3;
         System.out.println(res);
+
+
+        String jj2="q";
+        String jj3=jj2;
+        jj2 ="aa";
+        System.out.println(jj3);
+
+        int qq2[]={1,2};
+        test(qq2);
+        System.out.println(qq2[0]);
+        System.out.println(b.charAt(1));
     }
 
-
+   public static void test(int[] qq2){
+        int[] qq3=qq2;
+        qq3[0]=9;
+   }
 
 
 
@@ -54,7 +71,6 @@ int bb=c;
 
 
     public static <tt>tt jack(tt aa){
-
         return aa;
     }
     public static int jack2(){
